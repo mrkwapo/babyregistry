@@ -1,0 +1,1 @@
+I am creating a Baby Registry Checklist web application using JavaScript DOM
