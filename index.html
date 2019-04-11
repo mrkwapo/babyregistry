@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <link href="styles.css" rel="stylesheet" />
+    <script src="app.js"></script>
     <title>Baby Registry</title>
+    
   </head>
   <body>
   	<div id="wrapper">
@@ -13,13 +15,13 @@
 	    	    <img src="images/walmartLogo.png" class="logo">
 	    	    </center>
 
-          <p>Baby Registry Checklist</p>
-          <form id="search-books">
+          <h1>Baby Registry Checklist</h1>
+          <form id="search-items">
             <input type="text" placeholder="Search list..." />
           </form>
 	    	</div>
 	    </header>
-	    <div id="book-list">
+	    <div id="item-list">
 	    	<h2 class="title">Items needed</h2>
 	    	<ul>
 	    		<li>
@@ -40,12 +42,27 @@
 	    		</li>
 	    	</ul>
 	    </div>
-	    <form id="add-book">
+	    <form id="add-item">
+	    	<input type="checkbox" id="hide" />
+        <label for="hide">Hide all items</label>
 	    	<input type="text" placeholder="Add an item..." />
 	    	<button>Add</button>
 	    </form>
-
+<div id="tabbed-content">
+        <ul class="tabs">
+          <li data-target="#about" class="active">About</li>
+          <li data-target="#contact">Contact</li>
+        </ul>
+        <div class="panel active" id="about">
+          <p>From the Parents</p>
+          <p>We appreciation of your contribution, and we look forward to seeing you at our baby shower. Let's Celebrate!</p>
+        </div>
+        <div class="panel" id="contact">
+          <p>Contact US</p>
+          <p>If you have any questions, please contact us at (555) 555-5555</p>
+        </div>
+      </div>
     </div>
-    <script src="app.js"></script>
+    
   </body>
 </html>

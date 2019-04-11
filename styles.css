@@ -6,10 +6,9 @@ body{
 
 h1, h2{
     font-weight: normal;
-}
-p{
     color: #fff;
 }
+
 
 #wrapper{
     width: 90%;
@@ -47,22 +46,22 @@ p{
     color: #444;
 }
 
-#book-list, #add-book, #tabbed-content{
+#item-list, #add-item, #tabbed-content{
     margin: 30px;
 }
 
-#book-list ul, #tabbed-content ul{
+#item-list ul, #tabbed-content ul{
     list-style-type: none;
     padding: 0;
 }
 
-#book-list li{
+#item-list li{
     padding: 20px;
     border-left: 5px solid #ddd;
     margin: 20px 10px;
 }
 
-#book-list li:hover{
+#item-list li:hover{
     border-color: #004c91;
 }
 
@@ -79,12 +78,12 @@ p{
     background: #333;
 }
 
-#add-book{
+#add-item{
     width: 400px;
     margin: 0 auto;
 }
 
-#add-book input{
+#add-item input{
     display: block;
     margin: 20px 0;
     padding: 10px;
@@ -96,7 +95,8 @@ p{
     float: left;
 }
 
-#add-book button{
+
+#add-item button{
     border: 1px solid #004c91;
     background: #004c91;
     padding: 10px 20px;
@@ -112,18 +112,21 @@ p{
     color: white;
 }
 
-#add-book:after{
+#add-item:after{
     content: '';
     display: block;
     clear: both;
 }
 
-/*.logo {*/
-/*    display: flex;*/
-/*    align-self: center;*/
-/*}*/
+#add-item #hide{
+  width: 30px;
+}
 
-/*
+#add-item label{
+  line-height: 52px;
+}
+
+
 #tabbed-content li{
     display: inline-block;
     padding: 10px 14px;
@@ -141,4 +144,3 @@ p{
 #tabbed-content .tab.active{
     display: block;
 }
-*/
